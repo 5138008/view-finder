@@ -28,7 +28,7 @@
         <!--ViewFinder-->
         <scene sceneID="gWz-i8-H7x">
             <objects>
-                <tableViewController id="u3u-SE-ON1" sceneMemberID="viewController">
+                <tableViewController id="u3u-SE-ON1" customClass="PostTableViewController" customModule="view_finder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yEZ-FE-sGS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,6 +41,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="qPw-Of-2Ao" kind="show" id="86M-vd-MeS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -64,7 +67,7 @@
         <!--Add New Photo-->
         <scene sceneID="yyN-mQ-tZY">
             <objects>
-                <viewController id="t84-DM-rUf" sceneMemberID="viewController">
+                <viewController id="t84-DM-rUf" customClass="AddPhotoViewController" customModule="view_finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5LG-PX-hNg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,18 +77,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveTapped:" destination="t84-DM-rUf" eventType="touchUpInside" id="wo1-7C-F2n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtW-dn-xkO">
                                 <rect key="frame" x="10" y="753" width="72" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraTapped:" destination="t84-DM-rUf" eventType="touchUpInside" id="fhn-M8-Rxm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FA-Fp-dBH">
                                 <rect key="frame" x="173" y="754" width="61" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Library"/>
+                                <connections>
+                                    <action selector="libraryTapped:" destination="t84-DM-rUf" eventType="touchUpInside" id="3Zi-po-NXq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXk-aH-lTD">
                                 <rect key="frame" x="341" y="754" width="66" height="36"/>
@@ -117,6 +129,11 @@
                         <viewLayoutGuide key="safeArea" id="v0f-7p-XNj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="uvE-x2-z1E"/>
+                    <connections>
+                        <outlet property="captionText" destination="vO4-qb-6JT" id="EEe-FH-Xc7"/>
+                        <outlet property="imageView" destination="DwO-cG-7SG" id="kKd-bl-OAf"/>
+                        <outlet property="newImage" destination="DwO-cG-7SG" id="HHE-5w-Aye"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mnY-VT-UvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

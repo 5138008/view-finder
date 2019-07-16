@@ -12,6 +12,8 @@
 		1802356622DD1A44007DD2B5 /* view_finder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1802356422DD1A44007DD2B5 /* view_finder.xcdatamodeld */; };
 		1802356822DD1A45007DD2B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1802356722DD1A45007DD2B5 /* Assets.xcassets */; };
 		1802356B22DD1A45007DD2B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1802356922DD1A45007DD2B5 /* LaunchScreen.storyboard */; };
+		1802357322DD2AA5007DD2B5 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802357222DD2AA5007DD2B5 /* AddPhotoViewController.swift */; };
+		1802357522DD3F75007DD2B5 /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802357422DD3F75007DD2B5 /* PostTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		1802356722DD1A45007DD2B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1802356A22DD1A45007DD2B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1802356C22DD1A45007DD2B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1802357222DD2AA5007DD2B5 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		1802357422DD3F75007DD2B5 /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 				1802356122DD1A44007DD2B5 /* Main.storyboard */,
 				1802356722DD1A45007DD2B5 /* Assets.xcassets */,
 				1802356922DD1A45007DD2B5 /* LaunchScreen.storyboard */,
+				1802357222DD2AA5007DD2B5 /* AddPhotoViewController.swift */,
 				1802356C22DD1A45007DD2B5 /* Info.plist */,
+				1802357422DD3F75007DD2B5 /* PostTableViewController.swift */,
 				1802356422DD1A44007DD2B5 /* view_finder.xcdatamodeld */,
 			);
 			path = "view-finder";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1802356622DD1A44007DD2B5 /* view_finder.xcdatamodeld in Sources */,
+				1802357522DD3F75007DD2B5 /* PostTableViewController.swift in Sources */,
+				1802357322DD2AA5007DD2B5 /* AddPhotoViewController.swift in Sources */,
 				1802355E22DD1A44007DD2B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
