@@ -14,6 +14,8 @@
 		1802356B22DD1A45007DD2B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1802356922DD1A45007DD2B5 /* LaunchScreen.storyboard */; };
 		1802357322DD2AA5007DD2B5 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802357222DD2AA5007DD2B5 /* AddPhotoViewController.swift */; };
 		1802357522DD3F75007DD2B5 /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802357422DD3F75007DD2B5 /* PostTableViewController.swift */; };
+		189A30BA22DE4DBB0062714A /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A30B922DE4DBB0062714A /* PhotoDetailViewController.swift */; };
+		18E87D7722DE7B27002E2379 /* deletelaterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E87D7622DE7B27002E2379 /* deletelaterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1802356C22DD1A45007DD2B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1802357222DD2AA5007DD2B5 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 		1802357422DD3F75007DD2B5 /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		189A30B922DE4DBB0062714A /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		18E87D7622DE7B27002E2379 /* deletelaterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deletelaterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 		1802355122DD1A44007DD2B5 = {
 			isa = PBXGroup;
 			children = (
+				18E87D7622DE7B27002E2379 /* deletelaterTableViewController.swift */,
 				1802355C22DD1A44007DD2B5 /* view-finder */,
 				1802355B22DD1A44007DD2B5 /* Products */,
 			);
@@ -63,6 +68,7 @@
 				1802356722DD1A45007DD2B5 /* Assets.xcassets */,
 				1802356922DD1A45007DD2B5 /* LaunchScreen.storyboard */,
 				1802357222DD2AA5007DD2B5 /* AddPhotoViewController.swift */,
+				189A30B922DE4DBB0062714A /* PhotoDetailViewController.swift */,
 				1802356C22DD1A45007DD2B5 /* Info.plist */,
 				1802357422DD3F75007DD2B5 /* PostTableViewController.swift */,
 				1802356422DD1A44007DD2B5 /* view_finder.xcdatamodeld */,
@@ -144,7 +150,9 @@
 				1802356622DD1A44007DD2B5 /* view_finder.xcdatamodeld in Sources */,
 				1802357522DD3F75007DD2B5 /* PostTableViewController.swift in Sources */,
 				1802357322DD2AA5007DD2B5 /* AddPhotoViewController.swift in Sources */,
+				189A30BA22DE4DBB0062714A /* PhotoDetailViewController.swift in Sources */,
 				1802355E22DD1A44007DD2B5 /* AppDelegate.swift in Sources */,
+				18E87D7722DE7B27002E2379 /* deletelaterTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
