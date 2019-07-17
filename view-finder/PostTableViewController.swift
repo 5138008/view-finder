@@ -60,21 +60,29 @@ class PostTableViewController: UITableViewController {
                 if let photoToSend = sender as? Photos {
                     photoDetailView.photo = photoToSend
                 }
-                func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+            }
+            }
+    }
+                override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
                     // Return false if you do not want the specified item to be editable.
                     return true
                 }
-                func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-                    if editingStyle == .delete {s
+            
+               override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+                    if editingStyle == .delete {
                        if let context =
                         (UIApplication.shared.delegate as?
                             AppDelegate)?.persistentContainer.viewContext {
                         let photoToDelete = photos[indexPath.row]
-                        
+                        context.delete(photoToDelete)
+                        (UIApplication.shared.delegate as?
+                        AppDelegate)?.saveContext()
+                        getPhotos()
                     }
                 }
             }
-        }
-    }
-}
+        
+    
+
+
 }
